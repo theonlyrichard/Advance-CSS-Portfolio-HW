@@ -1,0 +1,148 @@
+:root {
+    --textcolor: rgb(19, 18, 18);
+    --bgcolor0: #ececec;
+    --bgcolor1: #30b1e4;
+    --bgcolor2: #000000;
+    --bgcolor3: #01a2be;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background: var(--bgcolor0);
+  }
+  
+  header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--bgcolor1);
+    color:var(--textcolor);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 150%;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+    
+  nav a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  intro {
+    padding: 10px; 
+    color: #050505;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    background:var(--bgcolor1);
+    color:rgb(3, 3, 3);
+    margin-top: auto;
+  }
+  
+  a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--bgcolor3)
+  }
+  
+  .card {
+    width: 80%; 
+    height:240px;
+    max-height: 240px;
+    /* border-style:solid;
+    border-width: 1px; */
+    padding: 20px;
+    margin: 20px;
+    flex: 0 0 350px;
+    /* box-shadow: 5px 10px 10px #888888; */
+  }
+  
+  .card:hover {
+    color: var(--bgcolor3);
+    border-width: 3px;
+    text-size-adjust: 150%;
+  }
+  
+  .cardlinks {
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    vertical-align: text-top;
+    max-height: 10px;
+  }
+  
+  .linkImg {
+    position:relative;
+    top:-50px;
+  }
+  
+  .linkImg img {
+    max-width: 400px;
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .content {
+    display:block;
+    color: black;
+    background-color: lightgray;
+  }
+  
+   .card header {
+    position:relative;
+    top:-40px;
+    width:200px;
+    height:25px;
+    padding: 20px;
+    background: var(--bgcolor0);
+  }
+    
+  .card p {
+    text-align: center;
+  }
+  
+  #section {
+    color: rgb(0, 0, 0);
+  }
+  #social img {
+    opacity: 50%;
+  }
+  #social:hover img {
+    opacity:100%;
+    transform: scale(1.1);  
+  }
