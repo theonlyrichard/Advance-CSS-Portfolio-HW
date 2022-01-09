@@ -6,59 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Cardoza</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="./assets/script.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Richard Cardoza</h1>
+    <!--navbar-->
+    <nav class="navbar">
+        <ul class="link-group">
+            <li class="link active"><a href="#">Home</a></li>
+            <li class="link"><a href="#About">About</a></li>
+            <li class="link"><a href="#Contact">Contact</a></li>
+            <li class="link"><a href="#Projects">Projects</a></li>
+        </ul>
+    </nav>
+    <!--home section-->
+    <section class="home-section active">
+        <h1 class="hero-heading"> Hi!, I am <br> Richard Cardoza</h1>
+        <img src="./assets/images/richard.jpeg" class="home-img" alt="profile">
+    </section>
+    <!-- project section -->
+    <section class="project-section active">
+        <h1 class="project-heading">some of my projects</h1>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="./assets/images/Horison.PNG" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">Horison</h1>
+                    <p class="project-info">
+                        Social Media and serch engine optimization site!
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/images/runbuddy.png" class="project-img" alt="">
+                <div class="project-content">
+                    <h1 class="project-title">RunBuddy</h1>
+                    <p class="project-info">
+                        Connecting clients with trainers!
+                    </p>
 
-        <h1>Portfolio</h1>
-        <nav id="contact">
-            <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Projects">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-    <a name="About"></a>
-    <intro>
-        <h2>Hi, i'm Richard.</h2>
-        <div style="float:right;">
-            <img src="richard.jpeg" alt="Richard PIC" height=50% width=50%>
-
+                </div>
+            </div>
         </div>
-        <div>
-            <p>
-
-                I'm just starting my journey as a web designer. I am hoping to make a career change into the coding
-                world. Currently I am a Sales Agent at Auto Club Southern California.
+    </section>
+    <!-- about section -->
+    <section class="about-section active">
+        <div class="about">
+            <div class="about-img-container">
+                <img src="./assets/images/richardselfie 2 Small.jpeg" class="about-img" alt="">
+            </div>
+            <p class="about-info"> Hello my name is Richard Cardoza, im new to the web development seen. Currently im an
+                Insurance Agent for the Auto Club of Southern California. Hoping to switch careers to coding.
             </p>
         </div>
-    </intro>
-    <a name="Project"></a>
-    <h2 id="section">Project ::</h2>
-
-    <main>
-
+    </section>
+    <!-- contact section -->
+    <section class="contact-section">
+        <form class="contact-form">
+            <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+            <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+            <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+            <button type="submit" class="form-submit-btn">contact</button>
+        </form>
+        <!-- map -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.476211247152!2d-117.43116758478753!3d33.95459758063267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1142d94c341%3A0x2a34cdccffa39577!2s5771%20Norman%20Way%2C%20Riverside%2C%20CA%2092504!5e0!3m2!1sen!2sus!4v1641619249375!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="card">
-            <header>
-                <h3>Horiseon</h3>
-            </header>
-            <div class="linkImg">
-                <a href="Horison.PNG" alt="Code Refactor" id="social" target=_blank><img src="Horison.PNG" height="600x"
-                        width=350px></a>
-            </div>
-            </Section>
-
-            <a name="Contact"></a>
-            <footer>
-                <a href="https://www.linkedin.com/in/richard-cardoza-77a620162/" target="_blank" id="social"
-                    alt="linkedin"><img src="linkedin-logo.png" height=25% width="25%">
-                </a>
-            </footer>
-</body>
-
-</html>
+    </section>
